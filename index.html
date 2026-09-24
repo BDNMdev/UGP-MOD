@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>UGP-MOD</title>
+  <meta name="description"
+    content="UGP-MOD : Unité de Gestion du Programme de Modernisation de la Douane en République Démocratique du Congo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="loader"><img src="img/logo bleu.png" alt="">
+    <div class="spin"></div>
+  </div>
+  <div id="bar"></div>
+  <header>
+    <div class="wrap bar">
+      <a class="logo" href="#accueil" aria-label="UGP-MOD, accueil"><img src="img/logo bleu.png" alt="Logo UGP-MOD"></a>
+      <button class="burger" aria-label="Menu" aria-expanded="false">Menu</button>
+      <nav aria-label="Navigation principale">
+        <a href="#accueil" data-p="accueil">ACCUEIL</a>
+        <a href="#apropos" data-p="apropos">À PROPOS</a>
+        <a href="#projets" data-p="projets">NOS PROJETS</a>
+        <a href="#actualites" data-p="actualites">ACTUALITÉS</a>
+        <a href="#documents" data-p="documents">DOCUMENTS</a>
+        <a href="#partenaires" data-p="partenaires">PARTENAIRES</a>
+        <a href="#contact" data-p="contact">CONTACT</a>
+        <a href="#" class="login">Connexion</a>
+      </nav>
+    </div>
+  </header>
+  <main id="app"></main>
+  <div class="mod" id="mod" role="dialog" aria-modal="true" aria-label="Connexion">
+    <div class="box">
+      <h2>Connexion</h2>
+      <form class="f" id="lf" novalidate>
+        <div><label>Identifiant<input id="lu" required autocomplete="username"><span class="err"></span></label></div>
+        <div><label>Mot de passe<input type="password" required autocomplete="current-password"><span
+              class="err"></span></label></div>
+        <button class="btn">Se connecter</button>
+        <p class="ok" id="lmsg" role="status"></p>
+        <button type="button" class="btn alt" data-x="1">Fermer</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div class="wrap">
+      <div>
+        <h4>UGP-MOD</h4>
+        <p>Unité de Gestion du Programme de Modernisation de la Douane. République Démocratique du Congo.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4><a href="#apropos">À propos</a><a href="#projets">Nos projets</a><a
+          href="#actualites">Actualités</a><a href="#documents">Documents</a>
+      </div>
+      <div>
+        <h4>Liens</h4><a href="#contact">Contact</a><a href="#partenaires">Partenaires</a><a
+          href="https://finances.gouv.cd" rel="noopener">Ministère des Finances</a>
+      </div>
+    </div>
+    <p class="copy">© <span id="y"></span> UGP-MOD. Tous droits réservés.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
