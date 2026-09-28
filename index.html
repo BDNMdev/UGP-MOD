@@ -8,6 +8,10 @@
   <meta name="description"
     content="UGP-MOD : Unité de Gestion du Programme de Modernisation de la Douane en République Démocratique du Congo.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
@@ -19,10 +23,20 @@
     <div class="spin"></div>
   </div>
   <div id="bar"></div>
+  <div class="topbar">
+    <div class="social">
+      <a href="#" class="social-facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="social-instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="social-linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#" class="social-x" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" class="social-youtube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#" class="social-tiktok" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </div>
   <header>
-    <div class="wrap bar">
+    <div class="nav-shell">
       <a class="logo" href="#accueil" aria-label="UGP-MOD, accueil"><img src="img/logo bleu.png" alt="Logo UGP-MOD"></a>
-      <button class="burger" aria-label="Menu" aria-expanded="false">Menu</button>
+
       <nav aria-label="Navigation principale">
         <a href="#accueil" data-p="accueil">ACCUEIL</a>
         <a href="#apropos" data-p="apropos">À PROPOS</a>
@@ -31,8 +45,20 @@
         <a href="#documents" data-p="documents">DOCUMENTS</a>
         <a href="#partenaires" data-p="partenaires">PARTENAIRES</a>
         <a href="#contact" data-p="contact">CONTACT</a>
-        <a href="#" class="login">Connexion</a>
+        <a href="#" class="login" hidden>Connexion</a>
       </nav>
+
+      <div class="header-tools" aria-label="Préférences d’affichage">
+        <button class="utility-btn theme-btn" id="themeToggle" type="button" aria-label="Activer le mode sombre" title="Mode sombre">
+          <span class="tool-icon" aria-hidden="true">☾</span>
+        </button>
+        <button class="utility-btn lang-btn" id="langToggle" type="button" aria-label="Passer le site en anglais" title="Traduction français / anglais">
+          <span class="tool-icon lang-icon" aria-hidden="true">文</span>
+          <span class="tool-label">FR</span><span class="lang-sep">/</span><span class="lang-alt">EN</span>
+        </button>
+      </div>
+
+      <button class="burger" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i><span class="sr-only">Menu</span></button>
     </div>
   </header>
   <main id="app"></main>
@@ -51,20 +77,36 @@
   </div>
   <footer>
     <div class="wrap">
-      <div>
-        <h4>UGP-MOD</h4>
-        <p>Unité de Gestion du Programme de Modernisation de la Douane. République Démocratique du Congo.</p>
+      <div class="f-brand">
+        <div class="logo-bas"><img src="img/logo.png" alt="Logo UGP-MOD"></div>
+        <p>Unité de Gestion du Programme de <br> Modernisation de la Douane <br> République Démocratique du Congo.</p>
       </div>
       <div>
         <h4>Navigation</h4><a href="#apropos">À propos</a><a href="#projets">Nos projets</a><a
           href="#actualites">Actualités</a><a href="#documents">Documents</a>
       </div>
       <div>
-        <h4>Liens</h4><a href="#contact">Contact</a><a href="#partenaires">Partenaires</a><a
-          href="https://finances.gouv.cd" rel="noopener">Ministère des Finances</a>
+        <h4>Liens</h4><a href="#contact">Contact</a><a href="#partenaires">Partenaires</a>
+      </div>
+      <div>
+        <h4>Institutions</h4><a href="https://finances.gouv.cd" rel="noopener" target="_blank">Ministère des Finances</a><a
+          href="https://douane.gouv.cd" rel="noopener" target="_blank">DGDA</a><a href="https://kinshasaitpafuh.cd/"
+          rel="noopener" target="_blank">Ministère des Infrastructures</a><a href="https://transports.gouv.cd"
+          rel="noopener" target="_blank">Ministère des Transports</a>
+      </div>
+      <div>
+        <h4>Suivez-nous</h4>
+        <div class="f-social">
+          <a href="#" class="social-facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-x" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-youtube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="social-tiktok" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
       </div>
     </div>
-    <p class="copy">© <span id="y"></span> UGP-MOD. Tous droits réservés.</p>
+    <p class="copy">&copy <span id="y"></span> UGP-MOD. Tous droits réservés.</p>
   </footer>
   <script src="js/main.js"></script>
 </body>
